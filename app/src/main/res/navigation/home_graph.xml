@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph.xml"
+    app:startDestination="@id/principalFragment">
+
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="com.revapplution.newdoc.PrincipalFragment"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principalFragment_to_misDocsFragment"
+            app:destination="@id/misDocsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/misDocsFragment"
+        android:name="com.revapplution.newdoc.MisDocsFragment"
+        android:label="fragment_mis_docs"
+        tools:layout="@layout/fragment_mis_docs" >
+        <action
+            android:id="@+id/action_misDocsFragment_to_docsCompradosFragment"
+            app:destination="@id/docsCompradosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/docsCompradosFragment"
+        android:name="com.revapplution.newdoc.DocsCompradosFragment"
+        android:label="fragment_docs_comprados"
+        tools:layout="@layout/fragment_docs_comprados" />
+</navigation>

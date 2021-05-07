@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nuevo_tramite_graph"
+    app:startDestination="@id/step1NDocFragment">
+
+    <fragment
+        android:id="@+id/step1NDocFragment"
+        android:name="com.revapplution.newdoc.Step1NDocFragment"
+        android:label="fragment_step1_n_doc"
+        tools:layout="@layout/fragment_step1_n_doc" >
+        <action
+            android:id="@+id/action_step1NDocFragment_to_step2Fragment"
+            app:destination="@id/step2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/step2Fragment"
+        android:name="com.revapplution.newdoc.Step2Fragment"
+        android:label="fragment_step2"
+        tools:layout="@layout/fragment_step2" />
+</navigation>
